@@ -1,4 +1,9 @@
-﻿namespace Geopolitics;
+﻿using Geopolitics.Context;
+using Geopolitics.Repositories;
+using Geopolitics.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+namespace Geopolitics;
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -11,6 +16,10 @@ public class Startup
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddDbContext<AppDbContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        services.AddTransient<ICountryRepository, CountryRepository>();
+        services.AddTransient<IContinentRepository, ContinentRepository>();
         services.AddControllersWithViews();
     }
 

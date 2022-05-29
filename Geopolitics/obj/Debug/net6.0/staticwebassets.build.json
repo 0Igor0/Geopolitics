@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hLUtQNlci6tjCbk8Y02ppnilNbJY8Akv32HtpKqSPcg=",
+  "Hash": "7ltVUQXONIND/kyXhnAwfFWeGIDBMtcslliXgrT6aeA=",
   "Source": "Geopolitics",
   "BasePath": "_content/Geopolitics",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\arabiasaudita.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cidah\\OneDrive\\Área de Trabalho\\Curso ASP.NET MVC\\Geopolitics\\Geopolitics\\wwwroot\\images\\brasil.jpg",
+      "SourceId": "Geopolitics",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cidah\\OneDrive\\Área de Trabalho\\Curso ASP.NET MVC\\Geopolitics\\Geopolitics\\wwwroot\\",
+      "BasePath": "_content/Geopolitics",
+      "RelativePath": "images/brasil.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\brasil.jpg"
     },
     {
       "Identity": "C:\\Users\\cidah\\OneDrive\\Área de Trabalho\\Curso ASP.NET MVC\\Geopolitics\\Geopolitics\\wwwroot\\images\\china.jpg",
