@@ -1,15 +1,16 @@
-﻿@model IEnumerable<Geopolitics.Models.Country>//@model define o modelo usado na view, a variável Model representa o tipo definido na view
+﻿@model CountryListViewModel;//@model define o modelo usado na view, a variável Model representa o tipo definido na view
 
 <div>
     <h2>
-        Every Countries
+        @Model.CurrentContinent
     </h2>
+    <hr />
 </div>
-
-@foreach(var country in Model){
-    <div>
-        <h4>@country.Name</h4>
-        <p><img src ="@country.ImgUrl"></p>
-        <h3>Population: @country.Population.ToString("")</h3>
+<div class="container">
+    <div class="row">
+        @foreach (var country in Model.Countries)
+        {
+            <partial name = "_CountrySummary" for ="@country"/>
+        }
     </div>
-}
+</div>

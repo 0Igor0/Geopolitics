@@ -29,5 +29,7 @@ namespace Geopolitics.Models
         public int ContinentID { get; set; }
         public virtual Continent Continent { get; set; }// propriedade de navegação
 
+
+
     }
 }
